@@ -16,5 +16,5 @@
   
 }
 h4 *{
-    border: clamp(5px, 0.15vw,10px) solid #4a90e2;
+    border: clamp(5px, 0.15vw,10px) solid black;
 }
