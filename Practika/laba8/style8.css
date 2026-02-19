@@ -16,5 +16,5 @@
   
 }
 .clamp{
-    font-size:clamp(2rem, 4vw, 4rem);
+    font-size:clamp(200px, 50%, 4rem);
 }
