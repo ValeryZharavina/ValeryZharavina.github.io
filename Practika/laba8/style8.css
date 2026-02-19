@@ -6,3 +6,7 @@
         position: fixed;
         z-index: 999;   /* Под модальным окном */
 }
+.img3{
+    position: absolute;
+    z-index: -1;    /* Уйдет под обычный поток */
+}
