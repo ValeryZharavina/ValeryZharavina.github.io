@@ -17,4 +17,5 @@
 }
 h2 {
     font-size:clamp(100px, 50%, 200px);
+    padding: clamp(1rem, 5vw, 4rem);
 }
