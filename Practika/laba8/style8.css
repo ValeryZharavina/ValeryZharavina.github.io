@@ -15,6 +15,6 @@
     z-index: -1;
   
 }
-h4 *{
+.f{
     border: clamp(1px, 0.15vw, 3px) solid #4a90e2;
 }
