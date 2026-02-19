@@ -1,12 +1,17 @@
-.img{
+.img {
     position: fixed;
-    z-index: 1000; 
+    z-index: 1000;
+    background: red;
 }
-.img2{
-        position: fixed;
-        z-index: 999;   /* Под модальным окном */
-}
-.img3{
+
+.img2 {
     position: fixed;
-    z-index: -1;    /* Уйдет под обычный поток */
+    z-index: 999;
+    background: blue;
+}
+
+.img3 {
+    position: fixed;
+    z-index: -1;
+    background: green;
 }
