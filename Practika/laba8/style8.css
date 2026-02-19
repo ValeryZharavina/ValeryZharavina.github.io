@@ -16,5 +16,5 @@
   
 }
 h2 {
-    font-size:clamp(200px, 50%, 4rem);
+    font-size:clamp(100px, 50%, 200px);
 }
