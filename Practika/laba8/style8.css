@@ -5,16 +5,44 @@
 }
 
 .img2 {
-    position: fixed;
+    position: absolute;
     z-index: 999;
    
 }
 
 .img3 {
-    position: fixed;
+    position: absolute;
     z-index: -1;
   
 }
-.f{
+.clamp{
     border: clamp(1px, 0.15vw, 3px) solid #4a90e2;
+}
+.img4 {
+    border: 4px, solid red;
+    border-radius: 10%;
+    position: absolute;
+
+}
+
+.img5 {
+    border: 4px, solid purple;
+    border-radius: 10%;
+    position: relative;
+    
+}
+.img6 {
+    border: 4px, solid green;
+    border-radius: 10%;
+    position: fixed;
+}
+.img7 {
+    border: 4px, solid blue;
+    border-radius: 10%;
+    position: static;
+}
+.exs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
