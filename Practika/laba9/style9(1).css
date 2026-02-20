@@ -1,1 +1,28 @@
+.header{
+    display: grid;
+    width: 100%;
+    border:1px solid black;
+    justify-tracks: center;
+    background:greenyellow;
+    height: 50px;
+    place-items: center;
+}
+.main{
+    width: 100%;
+    border:1px solid black;
+    height: auto;
+   
+}
+.item-main{
+    width: 20%;
+}
+.item-main2{
+    width: 80%;
+}
+.footer{
+    width: 100%;
+    border:1px solid black;
+    height: auto;
+    margin-top: 1vw;
+}
 
