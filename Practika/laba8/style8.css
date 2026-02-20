@@ -55,3 +55,15 @@
     text-align: center;
     padding: 20px;
 }
+.grid-container{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; /* 3 пути по горизонтали, 4 линии */
+        grid-template-rows: 100px 200px;    /* 2 пути по вертикали, 3 линии */
+        border: 4px solid black;
+      }
+    
+.grid-item{
+    grid-column: 1 / 3; /* От 1-й до 3-й вертикальной линии (2 пути шириной) */
+    grid-row: 1 / -1;   /* От 1-й горизонтальной линии до последней */
+    border: 4px solid black;
+}
