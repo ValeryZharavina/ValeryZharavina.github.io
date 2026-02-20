@@ -44,5 +44,14 @@
 .exs{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-between;
+    gap: 10px;
+
+    padding: 20px;
+}
+.text {
+    flex: 1 1 300px; /* Растягивается/сжимается от 300px */
+    margin-left: 5px;
+    text-align: center;
+    padding: 20px;
 }
