@@ -2,19 +2,50 @@
 <html>
 <head>
     <title>Лабораторная работа 9. Блочная верстка</title>
+
 </head>
 <body>
-    <div id="container" style="width: 100%; min-height: 100vh;">
-        <div id="header" style="background-color: red; height: 15vh; text-align: center; padding-top: 3vh;">
+    <style>
+    #main { 
+    overflow: hidden; 
+    height: 70vh; 
+    padding: 10px;
+}
+#main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#inf { 
+    background-color: white; 
+    border: 2px solid black; 
+    width: 66%; /* Было 70% */
+    height: 100%; 
+    text-align: center; 
+    padding: 20px; 
+    float: left;
+}
+#menu { 
+    background-color: pink; 
+    width: 28%; 
+    height: 100%; 
+    text-align: center; 
+    float: right; 
+    margin-left: 2%;
+}
+        </style>
+
+    <div id="container" >
+        <div id="header" >
             <h1>Верхняя часть</h1>
         </div>
         
-        <div id="main" style="overflow: hidden; height: 70vh; padding: 10px;">
-            <div id="inf" style="background-color: white; border: 2px solid black; width: 70%; height: 100%; text-align: center; padding: 20px; float: left;">
+        <div id="main">
+            <div id="inf">
                 <h2>Основной контент</h2>
             </div>
             
-            <div id="menu" style="background-color: pink; width: 28%; height: 100%; text-align: center; float: right; margin-left: 2%;">
+            <div id="menu">
                 <h2>Меню</h2>
                 <ul style="list-style: none; margin: 0; padding: 0; height: 100%;">
                     <li style="border-bottom: 1px solid black; padding: 25px 10px;">Главная</li>
@@ -26,7 +57,7 @@
             </div>
         </div>
         
-        <div id="footer" style="background-color: red; height: 15vh; text-align: center; padding-top: 3vh; margin-top: 0;">
+        <div id="footer" >
             <h2>Нижняя часть</h2>
         </div>
     </div>
