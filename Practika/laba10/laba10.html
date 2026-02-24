@@ -5,18 +5,19 @@
     <body>
         <style>
             @keyframes jump{
-                0%{ transform:translate(0px,-100px);
+                0%{ transform:translate(0px,-100px) scale(1,1);
                 }
-                50%{transform: translate(0px,10px);}
+                50%{transform: translate(0px,10px) scale(1.4,1);
+                    }
                 100%{transform: translate(0px,-100px);}
 
 
             }
             @keyframes jump2{
-                0%{ transform:scale(1.2);
+                0%{ transform:scale(0.7);
                 }
-                50%{transform:scale(1);}
-                100%{transform: scale(1.2);}
+                50%{transform:scale(1.4);}
+                100%{transform: scale(0.7);}
             }
 
           .circle{
@@ -44,14 +45,123 @@
         animation-duration: 1s ;
       animation-iteration-count: 500;
      }
-  
-    
+     @keyframes slide{
+               from { transform:translate(0px,0px);
+                }
+               to  {transform: translate(100px,0px) ;
+                    }
+            }
+     .box1{
+        width: 100px;
+        height:100px;
+        background-color: purple;
+        
+        
+        
+     }
+     .box1:hover{
+        transform: rotate(90deg);
+        transition: 1s;
+        animation-name: slide;
+        animation-duration: 1s ;
+        animation-timing-function: 20;
+       
+}
+
+     .box2{
+        width: 100px;
+        height:100px;
+        background-color: purple;
+     }
+     .box2:hover{
+        transform: scale(1.2,1.2);
+        transition: 1s;
+        animation-name: slide;
+        animation-duration: 1s ;
+        animation-timing-function: 20;
+        animation-direction: 2s;
+       
+}
+.box3{
+    width: 100px;
+        height:100px;
+        background-color: purple;
+}
+.box3:hover{
+    transform: skew(50deg,0);
+        transition: 1s;
+       
+       
+}
+.box4{
+    width: 100px;
+        height:100px;
+        background-color: purple;
+        
+}
+.box4:hover{
+    transform: translate(50px, 0px);
+        transition: 1s;
+}
+.box5{
+    width: 100px;
+        height:100px;
+        background-color: purple;
+}
+.box5:hover{
+    background:red;
+        transition: 1s;
+}
+h2{
+    color: white;
+}
+@keyframes squaree{
+    0% { transform: translate(0px, 0px);
+         background: lightcoral; }
+    25%{ transform: translate(100px, 270px);
+         background:darkred }
+         50%{transform: translate(470px, 170px);
+         background:yellow}
+        100%{transform: translate(0px, 0px);
+         background:palegreen}
+        
+    }
+.bord{
+    width: 500px;
+    height:300px;
+    border: 2px solid black;
+}
+.square{
+    width: 30px;
+    height: 30px;
+    animation-name: squaree;
+        animation-duration: 3s ;
+        animation-timing-function: 20s;
+        animation-direction: 2s;
+        animation-iteration-count:500;
+      
+
+}
         </style>
       
         <div class="circle"></div>
         <div class="circle2"></div>
 
+        <h1>Лабораторная работа 10. Задание 2</h1>
 
+        <div class="box1"><h2>rotate <br> slide </h2></div>
+        <br>
+        <div class="box2"><h2>scale <br> slide</h2></div>
+        <br>
+        <div class="box3"><h2>skew </h2></div>
+        <br>
+        <div class="box4"><h2>translate</h2></div>
+        <br>
+        <div class="box5"><h2>background</h2></div>
+
+        <h1>Лабораторная работа 10. Задание 3</h1>
+        <div class="bord">
+            <div class="square"></div>
+        </div>
     </body>
 </html>
-
