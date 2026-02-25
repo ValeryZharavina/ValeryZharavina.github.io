@@ -6,6 +6,39 @@
     </head>
     <body>
         <style>
+
+ ul.menu3 > li > ul  {
+   margin-top: 30px;
+   margin-right: 90px;
+   transition:1s;
+   margin-right:0px;
+   position: relative;
+   
+   
+}
+.menu3 > li > a {
+    display: flex;
+    padding: 12px 20px;
+    background: rgba(168, 250, 121, 0.788);
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    border-bottom: 5px solid black;
+    transition: all 0.3s ease;
+}
+
+ul.menu3 > li:hover > ul {
+   transition:1s;
+   margin-left:100px;
+   background: rgba(168, 250, 121, 0.788);
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+    display: block;
+    color: white;
+   }
+
      .menu2 {
     display: flex;
     list-style: none;
@@ -95,6 +128,7 @@ a{
     position: absolute;
 }
 
+
 </style>
 <h1>Лабораторная работа 11.Задание 1</h1>
 <div class="rows">
@@ -115,7 +149,7 @@ a{
 </div>
 
 <ul class="menu2">
-   <li></li>
+
    <li> <a href="/home"> Home </a></li>
    <li> <a href="/home"> About </a></li>
    <li> <a href="/home"> Gallery </a>
@@ -128,7 +162,31 @@ a{
 <br>
 <br>
 <h1>Лабораторная работа 11.Задание 2</h1>
+<div class="rows">
+   <ul class="menu3">
+     <li><a id="main" href="/li">=</a>
+    
+     <ul>
+       <li> <a href="/home"> Home </a></li>
+       <li> <a href="/home"> About </a></li>
+       <li> <a href="/home"> Gallery </a>
+       <li> <a href="/home"> News </a></li>
+       <li> <a href="/home"> Contacts </a></li>
+     </ul>
+    
+    </li>
+ </ul>
+  
+ </div>
 
+<ul class="menu2">
+
+   <li> <a href="/home"> Home </a></li>
+   <li> <a href="/home"> About </a></li>
+   <li> <a href="/home"> Gallery </a>
+   <li> <a href="/home"> News </a></li>
+   <li> <a href="/home"> Contacts </a></li>
+</ul>
 </body>
 </html>
 
