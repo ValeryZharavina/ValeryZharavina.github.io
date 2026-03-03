@@ -63,17 +63,37 @@
     color: black;
     border-radius: 40px;
     border: 3px solid black;
-  
+     list-style: none;
 }
-
+a{
+    list-style: none;
+}
+      .close-btn {
+            position: absolute;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 50%;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            margin-left: 36vw;
+            margin-top: 1vw;
+        }
+    
+        
         </style>
+
      <div class="zav-card">
+        <div class="close-btn"><a href="https://valeryzharavina.github.io/Practika/indiv/indiv.html"></a>Х</div>
         <h1>Регистрация</h1>
     <ul>
     <li><input type="text" name="pole" value="ФИО" class="name"> </li><br>
-    <li> <input type="text" name="number" value="+7-999-888-24-22" class="name"> </li><br>
-    <li><input type="text" name="pole" value="Пароль" class="name"></li><br>
-    <li> <input type="text" name="pole" value="Подтверждение пароля" class="name"></li><br>
+    <li> <input type="tel" name="number" value="+7-999-888-24-22" class="name"> </li><br>
+    <li><input type="password" name="pole" value="Пароль" class="name"></li><br>
+    <li> <input type="password" name="pole" value="Подтверждение пароля" class="name"></li><br>
     <div class="botton2" ><a href="" style="list-style: none;">Зарегистрироваться </a> </div>
      </div>
     </body>
