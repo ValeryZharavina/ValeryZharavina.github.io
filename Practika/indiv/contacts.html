@@ -3,23 +3,144 @@
           <title> Kids Lern</title>
     </head>
     <body>
+         <style>
+ .menu2 {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 0 20px; 
+    justify-content: center; 
+    background: rgba(168, 250, 121, 0.788); 
+    border-bottom: 5px solid rgb(0, 0, 0);
+    z-index: 1000;
+   
+}
+a{
+   color:black
+}
+.menu2 li a {
+    display: block;
+    padding: 12px 24px;
+    background: rgba(168, 250, 121, 0.788);
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+ 
+}
+
+.menu2 li a:hover {
+    background: rgba(12, 12, 12, 0.616);
+    color: white;
+    border-bottom: 5px solid red;
+   
+}
+body{
+    background: blanchedalmond;
+}
+
+    header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: center; 
+    width: 100%;            
+    height: auto;           
+    margin-top: 60px;       
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+main{
+    text-align: center;
+}
+
+.table{
+    height: 30vh;
+    width: 40vw;
+    text-align: center;
+}
+.head{
+    width:20vw;
+    height: 6vh;
+    border: 2px solid black;
+    border-radius: 50px;
+    text-align: center;
+    background: rgb(98, 255, 98);
+}
+main{
+        display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: center; 
+    width: 100%;            
+    height: auto;           
+    margin-top: 30px;       
+    background: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+      </style>
+<ul class="menu2">
+    <li> <a href="https://valeryzharavina.github.io/Practika/indiv/indiv.html"> Главная </a></li>
+    <li> <a href="https://valeryzharavina.github.io/Practika/indiv/about.html"> О нас </a></li>
+    <li> <a href="https://valeryzharavina.github.io/Practika/indiv/tbless.html"> Расписание </a> </li>
+    <li> <a href="/home"> Преподаватели </a></li>
+    <li> <a href="/home"> Контакты </a></li>
+    <li><a href="">Личный кабинет</a> </li>
+ </ul>
         <header>
            <div class="head"><h2 > Контакты </h2></div> 
         </header>
         <main>
-             <h3>Для записи на занятие
-            </h3>
-            <a href="/phone>">+7-909-888-777></a>
+             <h2>Для записи на занятие
+            </h2>
+            <a href="/phone>">+7-909-888-777</a>
             <h3>Зам. руководителя
             </h3>
-            <a href="/phone>">+7-999-888-777></a>
+            <a href="/phone>">+7-999-888-777</a>
              <h3> Педагог по воспитательной работе
             </h3>
-            <a href="/phone>">+7-989-888-777></a>
+            <a href="/phone>">+7-989-888-777</a>
              <h3>Для партнеров и предложений
             </h3>
-            <a href="/phone>">+7-909-888-777></a>
-            
+            <a href="/phone>">+7-909-888-777</a>
+            <h1>График работы</h1>
+            <table border="1" style=" width: 30vw;text-align: center;">
+                
+        <tr>
+            <td>Пн</td>
+             <td>С 09:00-16:00</td> 
+        </tr>
+        <tr> <td>Вт</td>
+             <td>С 09:00-16:00 </td> 
+        </tr>
+        <tr> <td>Ср</td>
+             <td>С 09:00-17:00</td>
+        </tr>
+        <tr> <td>Чт</td>
+             <td>С 09:00-16:00</td>
+        </tr>
+        <tr> <td>Пт</td>
+             <td>С 09:00-16:00</td>
+        </tr>
+        <tr> <td>Сб</td>
+             <td>С 09:00-14:00</td>
+            </tr>
+        <tr> <td>Вс</td>
+             <td> Выходной </td>
+             </tr>
+   
+
+            </table>
         </main>
     </body>
 </html>
