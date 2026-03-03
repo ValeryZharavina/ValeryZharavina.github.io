@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+    <title>Kids Learn</title>
+     <style>
+        .menu2 {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+            padding: 0 20px; 
+            justify-content: center; 
+            background: rgba(168, 250, 121, 0.788); 
+            border-bottom: 5px solid rgb(0, 0, 0);
+            z-index: 1000;
+        }
+        a { color: black; }
+        .menu2 li a {
+            display: block;
+            padding: 12px 24px;
+            background: rgba(168, 250, 121, 0.788);
+            color: black;
+            text-decoration: none;
+            font-family: sans-serif;
+            transition: all 0.3s ease;
+        }
+        .menu2 li a:hover {
+            background: rgba(12, 12, 12, 0.616);
+            color: white;
+            border-bottom: 5px solid red;
+        }
+        body { background: blanchedalmond; }
+        header {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100%; 
+            height: auto; 
+            margin-top: 70px; 
+            background: rgb(199, 255, 182);
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        .head {
+            width: 25vw;
+            height: 6vh;
+            border: 2px solid black;
+            border-radius: 50px;
+            text-align: center;
+            background: rgb(250, 193, 193);
+            padding-top: 15px;
+        }
+        .teachers-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .teacher-card {
+            flex: 1 1 250px;
+            max-width: 300px;
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .teacher-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        main { background: white; border-radius: 10px; padding: 20px; margin: 20px auto; max-width: 1200px; }
+    </style>
+</head>
+<body>
+    <ul class="menu2">
+        <li><a href="https://valeryzharavina.github.io/Practika/indiv/indiv.html"> Главная </a></li>
+        <li><a href="https://valeryzharavina.github.io/Practika/indiv/about.html"> О нас </a></li>
+        <li><a href="https://valeryzharavina.github.io/Practika/indiv/tbless.html"> Расписание </a></li>
+        <li><a href="#"> Преподаватели </a></li>
+        <li><a href="https://valeryzharavina.github.io/Practika/indiv/contacts.html"> Контакты </a></li>
+        <li><a href=""> Личный кабинет </a></li>
+    </ul>
+    
+    <header>
+        <div class="head"><h2>Преподаватели</h2></div> 
+    </header>
+
+    <section class="teachers-grid">
+        <div class="teacher-card">
+            <img src="https://media.istockphoto.com/id/2188359102/ru/фото/женщина-учитель-с-таблицей-разговаривает-со-студентом-на-уроке-английского-языка-в-языковой.jpg?s=612x612&w=0&k=20&c=0i_9mitjGXewyaCVPqJzq_pMFlQXNsvLjLclYkgAcG4=" alt="Иванова Александра">
+            <h3>Иванова Александра</h3>
+            <p>Преподаватель веб-дизайна</p>
+        </div>
+        <div class="teacher-card">
+            <img src="https://taganrogprav.ru/wp-content/uploads/2025/02/uvit.jpg" alt="Вареньева Ольга">
+            <h3>Вареньева Ольга</h3>
+            <p>Преподаватель спортивной секции</p>
+        </div>
+        <div class="teacher-card">
+            <img src="https://s0.rbk.ru/v6_top_pics/media/img/2/78/756649642849782.jpg" alt="Зайцева Виолета">
+            <h3>Зайцева Виолета</h3>
+            <p>Преподаватель художественной секции</p>
+        </div>
+        <div class="teacher-card">
+            <img src="https://static.tildacdn.com/tild6338-3163-4637-b165-643162366431/1f21253d53af9873a523.jpg" alt="Мирова Екатерина">
+            <h3>Мирова Екатерина</h3>
+            <p>Преподаватель программирования</p>
+        </div>
+    </section>
+
+   </body>
+</html>
