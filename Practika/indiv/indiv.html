@@ -150,8 +150,19 @@ li{
     border-radius: 40px;
     border: 3px solid black;
 }
+html { scroll-behavior: smooth; } /* Опционально: плавность для всех скроллов */
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; 
+           
+    background: rgba(168, 250, 121, 0.788);
+    color: black;
+    width: max-content;
+    border-radius: 40px;
+    border: 3px solid black;
+    margin: 0;}
+        .content { height: 200vh; padding: 20px; } 
 
       </style>
+    
 <ul class="menu2">
   <li> <a href="https://valeryzharavina.github.io/Practika/indiv/indiv.html"> Главная </a></li>
     <li> <a href="https://valeryzharavina.github.io/Practika/indiv/about.html"> О нас </a></li>
@@ -165,7 +176,17 @@ li{
     <img src="https://avatars.mds.yandex.net/i?id=a282256deb5507126860756689209fe7f8a1a026-4577889-images-thumbs&n=13" class="img2" alt="Леопард" width="200">
     <h3> Детский развивающий центр "Kids Learn"</h3>
 
-     <h2 class="botton"> <a href="/ank"> Записаться</a> </h2>
+     <button class="scrollBtn">Записаться </button>
+     <script>
+         document.querySelector('.scrollBtn').addEventListener('click', function() {
+             window.scrollTo({
+                 top: window.innerHeight, // Скролл на один экран вниз
+                 behavior: 'smooth'
+             });
+         });
+     </script>
+     
+      
     <h2><a href="/re"> +7-999-888-24-22 </a></h2>
     <h4>Санкт-Петербург<br>
         БАЛТИЙСКАЯ ЖЕМЧУЖИНА <br>
