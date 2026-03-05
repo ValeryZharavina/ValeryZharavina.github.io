@@ -1,6 +1,8 @@
 <html>
     <head>
           <title>Kids Learn</title>
+          <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
     </head>
     
     <body>
@@ -86,15 +88,37 @@ a{
         
         </style>
 
-     <div class="zav-card">
+     <form class="zav-card">
         <div class="close-btn"><a href="https://valeryzharavina.github.io/Practika/indiv/indiv.html">Х</a></div>
         <h1>Регистрация</h1>
     <ul>
-    <li><input type="text" name="pole" value="ФИО" class="name"> </li><br>
-    <li> <input type="tel" name="number" value="+7-999-888-24-22" class="name"> </li><br>
-    <li><input type="password" name="pole" value="Пароль" class="name"></li><br>
-    <li> <input type="password" name="pole" value="Подтверждение пароля" class="name"></li><br>
-    <div class="botton2" ><a href="https://valeryzharavina.github.io/Practika/indiv/avt.html" style="list-style: none;">Зарегистрироваться </a> </div>
-     </div>
+    <li><input type="text" id="uname" placeholder="username" class="name"> </li><br>
+    <li><input type="password" id="pass" placeholder="password" class="name"></li><br>
+    <input type="submit" class="botton2" id="submit" >
+    </form>
+  
+    <script>
+
+        document.querySelector("form").onsubmit= async function(e) {
+            e.preventDefault();
+            var u= document.querySelector("#uname").value;
+            var p = document.querySelector("#pass").value;
+            var s = document.querySelector("#submit");
+            s.setAttribute('disabled', '1')
+            var res = await sessi.from('users').insert({ username: u, password: p }).select();
+                    console.log(res);
+            s.removeAttribute('disabled'); 
+            if(res.error==null) { alert("vse ok"); }
+            else { alert(  res.error.details ); }
+            //ins();
+        }
+        
+        
+                var sessi = supabase.createClient('https://nuvbpogxkwcicsdizavy.supabase.co', 'sb_publishable_81S34YWHTIa0EUQ25BYbRA_oW9XafZT');
+                console.log(sessi);
+           
+        
+            </script>
+        
     </body>
 </html>
