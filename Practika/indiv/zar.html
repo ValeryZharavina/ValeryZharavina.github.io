@@ -97,28 +97,6 @@ a{
     <input type="submit" class="botton2" id="submit" >
     </form>
   
-    <script>
-
-        document.querySelector("form").onsubmit= async function(e) {
-            e.preventDefault();
-            var u= document.querySelector("#uname").value;
-            var p = document.querySelector("#pass").value;
-            var s = document.querySelector("#submit");
-            s.setAttribute('disabled', '1')
-            var res = await sessi.from('users').insert({ username: u, password: p }).select();
-                    console.log(res);
-            s.removeAttribute('disabled'); 
-            if(res.error==null) { alert("vse ok"); }
-            else { alert(  res.error.details ); }
-            //ins();
-        }
-        
-        
-                var sessi = supabase.createClient('https://nuvbpogxkwcicsdizavy.supabase.co', 'sb_publishable_81S34YWHTIa0EUQ25BYbRA_oW9XafZT');
-                console.log(sessi);
-           
-        
-            </script>
-        
+   
     </body>
 </html>
